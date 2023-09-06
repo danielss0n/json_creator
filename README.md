@@ -1,15 +1,25 @@
 # json_creator
 Application for create jsons out of string lists;
+
 Remove the spaces and numbers;
+
 Create json file;
+
+Instructions: Put the data in the config.js and run Node index.js
+
 -
 example:
 -
 dataConfig = {
+
     column: "Name",
+    
     data: 
+
     //all the data go inside this template string
+    
     `
+    
     1	Miguel	1	Sophia
     2	Davi	2	Alice
     3	Arthur	3	Julia
@@ -20,6 +30,7 @@ dataConfig = {
     8	Matheus	8	Valentina
     9	Rafael	9	Giovanna
     10	Heitor	10	Maria Eduarda
+    
     `
 }
 -
@@ -28,6 +39,7 @@ To:
 {
     "column": "Name",
     "data": [
+    
         "Miguel",
         "Sophia",
         "Davi",
@@ -49,5 +61,6 @@ To:
         "Heitor",
         "Maria",
         "Eduarda"
+        
         ]
 }
