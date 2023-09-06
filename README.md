@@ -6,7 +6,6 @@ Remove the spaces and numbers;
 Create json file;
 
 Instructions: Put the data in the config.js and run Node index.js
-
 -
 example:
 -
