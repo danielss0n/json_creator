@@ -9,7 +9,7 @@ dataConfig = {
     column: "Name",
     data: 
     //all the data go inside this template string
-    `
+    "
     1	Miguel	1	Sophia
     2	Davi	2	Alice
     3	Arthur	3	Julia
@@ -20,7 +20,7 @@ dataConfig = {
     8	Matheus	8	Valentina
     9	Rafael	9	Giovanna
     10	Heitor	10	Maria Eduarda
-    `
+    "
 }
 -
 To:
