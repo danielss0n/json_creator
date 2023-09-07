@@ -1,5 +1,5 @@
 # json_creator
-A little code that turns string lists into an array with each item separate
+A little code that turns string lists into an formatted json
 
 ## Instructions:
 1. Open your terminal in the root directory and run npm init;
