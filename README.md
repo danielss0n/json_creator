@@ -4,11 +4,11 @@ A little code that turns string lists into an array with each item separate
 ## Instructions:
 1. Open your terminal in the root directory and run npm init;
 2. Open config.js and put the string and you want (as many objects as well);
-3. Put the operators you want to act on the data (allow multiples operators in the array)
+3. Put the operations you want to act on the data (allow multiples operators in the array)
 4. Run node index.js
 5. The code will create the jsons folder and the build.json file
 
-## Operators:
+## Operations:
 1 = Remove blank spaces <br>
 2 = Remove all numerals <br>
 3 = Remove all special characters or punctuation <br>
