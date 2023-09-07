@@ -1,65 +1,45 @@
 # json_creator
-Application for create jsons out of string lists;
+A little code that turns string lists into an array with each item separate
 
-Remove the spaces and numbers;
+## Instructions:
+1. Open your terminal in the root directory and run npm init;
+2. Open config.js and put the string and you want (as many objects as well);
+3. Put the operators you want to act on the data (allow multiples operators in the array)
+4. Run node index.js
+5. The code will create the jsons folder and the build.json file
 
-Create json file;
+## Operators:
+1 = Remove blank spaces <br>
+2 = Remove all numerals <br>
+3 = Remove all special characters or punctuation <br>
 
-Instructions: Put the data in the config.js and run Node index.js
--
-example:
--
-dataConfig = {
-
-    column: "Name",
-    
-    data: 
-
-    //all the data go inside this template string
-    
-    `
-    
-    1	Miguel	1	Sophia
-    2	Davi	2	Alice
-    3	Arthur	3	Julia
-    4	Pedro	4	Isabella
-    5   Gabriel	5	Manuela
-    6	Bernardo	6	Laura
-    7	Lucas	7	Luiza
-    8	Matheus	8	Valentina
-    9	Rafael	9	Giovanna
-    10	Heitor	10	Maria Eduarda
-    
-    `
+## Example config.js Input:
+```javascript
+module.exports = dataConfig = {
+    column1: {
+        operations: [1, 2, 3],
+        name: "First Name",
+        data:
+        `
+            1	Miguel	1	Sophia
+            2	Davi	2	Alice
+            3	Arthur	3	Julia
+        `
+    },
 }
--
-To:
--
-{
-    "column": "Name",
-    "data": [
-    
-        "Miguel",
-        "Sophia",
-        "Davi",
-        "Alice",
-        "Arthur",
-        "Julia",
-        "Pedro",
-        "Isabella",
-        "Gabriel",
-        "Manuela",
-        "Bernardo",
-        "Laura",
-        "Lucas",
-        "Luiza",
-        "Matheus",
-        "Valentina",
-        "Rafael",
-        "Giovanna",
-        "Heitor",
-        "Maria",
-        "Eduarda"
-        
+```
+## Example build.json Output:
+```json
+[
+    {
+        "name": "First Name",
+        "data": [
+            "Miguel",
+            "Sophia",
+            "Davi",
+            "Alice",
+            "Arthur",
+            "Julia"
         ]
-}
+    },
+]
