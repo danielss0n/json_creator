@@ -10,8 +10,8 @@ A little code that turns string lists into an array with each item separate
 
 ## Operations:
 1 = Remove blank spaces <br>
-2 = Remove all numerals <br>
-3 = Remove all special characters or punctuation <br>
+2 = Remove numerals <br>
+3 = Remove special characters or punctuation <br>
 
 ## Example config.js Input:
 ```javascript
